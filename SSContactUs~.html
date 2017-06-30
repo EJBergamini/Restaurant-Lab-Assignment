@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--This is to complete the second lab. In order to keep my original work seperate
+I have added tildes (~) to the end of the file names of all three pages
+so that I can show progression in learning, all relevant links have been
+renamed already.-->
+<!--I need help aligning the labels to the left of the fields, no matter what I do they won't align.-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
+        <style>
+            .forms input {
+                display: flex;
+                margin: auto;
+                text-align: center;
+            }
+            #ctr {
+                text-align: flex;
+                width: 200px;
+            }
+            textarea {
+                display: flex;
+                margin: auto;
+                text-align: left;
+            }
+            select {
+                display: flex;
+                margin: auto;
+                text-align: left;
+            }
+            .radiobuttons {
+                display: flex;
+                margin: auto;
+                text-align: left;
+                align-content: left;
+                width: 200px;
+            }
+            .checkboxes {
+                display: flex;
+                margin: auto;
+                text-align: center;
+                width: 200px;
+            }
+            .mainlabel {
+                /*display: flex;*/
+                /*float: left;*/
+                /*display: inline-block;*/
+                clear: left;
+                width: 240px;
+                text-align: right;
+                border: 5px solid;
+                /*padding-left: 500px;*/
+            }
+        </style>
+        <title>Contact Us</title>
+    </head>
+    <header>
+        <div class="headfootcenter"><h1>Shabu Shabu House!</h1></div>
+        <hr></hr>
+        &emsp;<a href="shabu shabu house~.html" target="_blank">Home</a>&emsp;<a href="SSmenu~.html" target="_blank">Menu</a>&emsp;<a href="SSContactUs~.html" target="_blank">Contact Us</a>   
+        <hr></hr>
+    </header>
+    <body>
+        <br><br>
+        <div class="container">
+            <form name="inputs" action="#" method="post">
+                <div class="forms">
+                    <label class="mainlabel" for="customerName">Customer Name:&emsp;</label>
+                    <input id="ctr" type="text" name="customerName"/>
+                </div>
+                <br>
+                <div class="forms">
+                    <label class="mainlabel" for="cusutomerEmail">Customer Email:&emsp;</label>
+                    <input id="ctr" type="text" name="customerEmail"/>
+                </div>
+                <br>
+                <div class="forms">
+                    <label class="mainlabel" for="cusutomerPhoneNumber">Customer Phone Number:&emsp;</label>
+                    <input id="ctr" type="tel" name="customerPhoneNumber"/>
+                </div>
+                <br>
+                <div class="forms">
+                    <label class="mainlabel" for="reason">Select the Reason for Reaching-Out:&emsp;</label>
+                    <select id="ctr" style="width: 200px;" name="reason">
+                    <option value="catering">Catering</option>
+                    <option value="private_party">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div class="forms">
+                    <label class="mainlabel" for="additionalInformation">Additional Information:&emsp;</label>
+                    <textarea id="ctr" style="height: 100px; width: 200px;" name="additionalInformation"/></textarea>
+                </div>
+                <br>
+                <div class="forms">
+                    <p class="mainlabel">Have You Visited Us Before?:&emsp;</p>
+                    <div class="radiobuttons">
+                        <input id="rad" type="radio" name="hasVisited1" value="No" checked />
+                        <label class="radiolabel;" for="hasVisited1">No</label>
+                        <input id="rad" type="radio" name="hasVisited2" value="Yes" />
+                        <label class="radiolabel;" for="hasVisited2">Yes</label>
+                    </div>
+                </div>
+                <br>
+                <div class="forms">
+                    <p class="mainlabel">Best Days to Contact You:&emsp;</p>
+                    <div class="checkboxes">
+                        <input id="chk" style="width: 20px;" type="checkbox" name="monday" value="Monday">
+                        <label class="checklabel;" for="monday">M</label>
+                        <input id="chk" style="width: 20px;" type="checkbox" name="tuesday" value="Tuesday">
+                        <label class="checklabel;" for="tuesday">Tu</label>
+                        <input id="chk" style="width: 20px;" type="checkbox" name="wednesday" value="Wednesday">
+                        <label class="checklabel;" for="wednesday">W</label>
+                        <input id="chk" style="width: 20px;" type="checkbox" name="thursday" value="Thursday">
+                        <label class="checklabel;" for="thursday">Th</label>
+                        <input id="chk" style="width: 20px;" type="checkbox" name="friday" value="Friday">
+                        <label class="checklabel;" for="friday">F</label>
+                    </div>
+                </div>
+                <br>
+                <div class="forms">
+                    <input style="width: auto;" type="submit"/>
+                </div>
+            </form>
+        </div>
+        <br>
+    </body>
+    <footer>
+        <hr></hr>
+        <div class="headfootcenter"><h2>1234 Made Up Avenue, Utopia, OH 43210</h2></div>
+        <div class="headfootcenter"><h3>1-(800)-234-5678</h3></div>
+    </footer>
+</html>
