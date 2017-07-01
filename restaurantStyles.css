@@ -1,5 +1,16 @@
 /* this style sheet is for the phase 3 project for the rewritten HTML restaurant homepage */
 .headfootcenter {
-    align-content: center; margin: auto;
+    align-content: center; 
+    margin: auto;
     text-align: center;
+    /*border: 5px solid;*/
+}
+html {
+    background-color: transparent;
+}
+body {
+    background-color: transparent;
+}
+.certainBodies {
+    background-color: lightsteelblue;
 }
