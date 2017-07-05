@@ -14,3 +14,12 @@ body {
 .certainBodies {
     background-color: lightsteelblue;
 }
+a:hover, active {
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+}
+a:visited {
+    color: grey;
+}
