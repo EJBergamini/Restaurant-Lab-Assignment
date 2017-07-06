@@ -3,25 +3,65 @@
 I have added tildes (~) to the end of the file names of all three pages
 so that I can show progression in learning, all relevant links have been
 renamed already.-->
+<!--For the 5th lab I am adding bootstrap to all sites and some other components like navigation.-->
 <html>
     <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
         <title>Home Page</title>
     </head>
     <header>
         <div class="headfootcenter"><h1>Shabu Shabu House!</h1></div>
         <hr></hr>
-        &emsp;<a href="shabu shabu house~.html" target="_blank">Home</a>&emsp;<a href="SSmenu~.html" target="_blank">Menu</a>&emsp;<a href="SSContactUs~.html" target="_blank">Contact Us</a>   
+            <ul class="nav nav-pills">
+                <li>&emsp;</li>
+                <li class="active"><a href="shabu shabu house~.html" target="_blank"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="SSmenu~.html" target="_blank">&emsp;Menu&emsp;</a></li>
+                <li><a href="SSContactUs~.html" target="_blank">&emsp;Contact Us&emsp;</a></li>
+            </ul>
         <hr></hr>
     </header>
     <body>
-        <div class="certainBodies">
+        <div class="jumbotron, bg-info">
+            <h2 style="text-align: center;">Check Out Our Upcoming Locations:</h2>
+            <ul>
+                <li>Luna, August 2060</li>
+                <li>Io, February 2075</li>
+                <li>Ceres, March 2075</li>
+        <br>
+        </div>
+        <div class="container-fluid" id="certainBodies">
             <br>
             <br>
-            <div><img style="display:block; margin: auto; height: 150px; width: 400px;" src="ShabuShabu.gif" alt="This image failed to load.">
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="img-responsive" style="display:block; margin: auto; height: 150px; width: 400px;" src="ShabuShabu.gif" alt="This image failed to load.">
+                </div>
             </div>
             <br>
-            <div style="display:block; margin: auto; text-align:left; width: 400px"><p>A new culinary import for NEOH.<br style="line-height: 40px">We're happy to bring the taste of Japan with many new flavors to North-East Ohio. For those not in the know Shabu Shabu is a cultural specialty hotpot soup from Japan. It is a soup with a very subtle light vegetable broth where diners dip fresh meats and vegetables into the broth in order to cook them. Typically the diner will dip the veggies and meat in a soy/wasabi sauce blend. At the end after you've cooked many vegetables and meat udon noodles are added. Come give it a try today!</p>
+            <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-4">
+                    <div style="margin:0 auto !important; max-width: 400px;">
+                        <p style="text-align:left;">A new culinary import for NEOH.</p>
+                        <p style="text-align:left;">We're happy to bring the taste of Japan with many new flavors to North-East Ohio. For those not in the know Shabu Shabu is a cultural specialty hotpot soup from Japan. It is a soup with a very subtle light vegetable broth where diners dip fresh meats and vegetables into the broth in order to cook them. Typically the diner will dip the veggies and meat in a soy/wasabi sauce blend. At the end after you've cooked many vegetables and meat udon noodles are added. Come give it a try today!</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                </div>
             </div>
             <br>
             <br>

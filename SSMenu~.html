@@ -4,10 +4,26 @@ I have added tildes (~) to the end of the file names of all three pages
 so that I can show progression in learning, all relevant links have been
 renamed already.-->
 <!--Added bold to the menu items.-->
+<!--For assignment 5 I am significantly altering the tables to use bootstrap's 12 columns with 3 across for lg/md and 1 across for sm/xs-->
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
         <title>Menu</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <!-- Redacted styles no longer needed due to using bootstrap.
         <style>
             table {
                 text-align: center;
@@ -23,80 +39,107 @@ renamed already.-->
             #tbl1 {
                 width: 25%;
             }
-        </style>
+        </style>-->
+
     </head>
     <header>
         <div class="headfootcenter"><h1>Shabu Shabu House!</h1></div>
         <hr></hr>
-        &emsp;<a href="shabu shabu house~.html" target="_blank">Home</a>&emsp;<a href="SSmenu~.html" target="_blank">Menu</a>&emsp;<a href="SSContactUs~.html" target="_blank">Contact Us</a>   
+            <ul class="nav nav-pills">
+                <li>&emsp;</li>
+                <li class="active"><a href="shabu shabu house~.html" target="_blank"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="SSmenu~.html" target="_blank">&emsp;Menu&emsp;</a></li>
+                <li><a href="SSContactUs~.html" target="_blank">&emsp;Contact Us&emsp;</a></li>
+            </ul>
         <hr></hr>
     </header>
     <body>
-        <div class="certainBodies">
-            <br>
-            <br>
-            <table>
-                <tr>
-                    <td colspan="3"><h2>Menu Items</h2></td>
-                </tr>
+        <div id="certainBodies">
+            <div class="container">
                 <br>
-                <tr>
-                    <td><h2>Bonito Flakes</h2></td>
-                    <td><h2>Chicken</h2></td>
-                    <td><h2>Beef</h2></td>
-                </tr>
                 <br>
-                <tr>
-                    <td>This soup comes with our specially made Bonito Flakes.<br>$15.50</td>
-                    <td>Fresh thinly sliced skinless chicken breast that will melt in your mouth!<br>$13.75</td>
-                    <td>Fresh thinly sliced strip steak. Recommended to dip only for 30 seconds.<br>$18.50</td>
+                <div class="row">
+                    <div class="col-sm-12" style="text-align: center;">
+                        <h2>Menu Items</h2>
+                    </div>
+                </div>
                 <br>
-                <tr>
-                    <td><h2>Fish</h2></td>
-                    <td><h2>Pork</h2></td>
-                    <td><h2>Lobster</h2></td>
-                </tr>
                 <br>
-                <tr>
-                    <td>Fresh caught Ohio Walleye filets!<br>$15.75</td>
-                    <td>Omish country pork cutlets thinly sliced. Recommended to cook for at least 2 minutes.<br>$15.25</td>
-                    <td>Maine lobster killed on-site and shelled. Can add shrimp for $4.25<br>$30.50</td>
-            </table>
-            <br>
-            <br>
-            <table id="tbl1">
-                <tr>
-                    <td colspan="2"><h2>Beverages</h2></td>
-                </tr>
+                <div class="row" style="text-align: center;">
+                    <div class="col-sm-4">
+                        <h2>Bonito Flakes</h2><br>This soup comes with our specially made Bonito Flakes.<br>$15.50
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Chicken</h2><br>Fresh thinly sliced skinless chicken breast that will melt in your mouth!<br>$13.75
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Beef</h2><br>Fresh thinly sliced strip steak. Recommended to dip only for 30 seconds.<br>$18.50
+                    </div>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <div class="col-sm-4">
+                        <h2>Fish</h2><br>Fresh caught Ohio Walleye filets!<br>$15.75
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Pork</h2><br>Omish country pork cutlets thinly sliced. Recommended to cook for at least 2 minutes.<br>$15.25
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Lobster</h2><br>Maine lobster killed on-site and shelled. Can add shrimp for $4.25<br>$30.50
+                    </div>
+                </div>
+            </div>      
+            <div class="container" style="text-align: center;" style="border: 5px solid">
                 <br>
-                <tr>
-                    <td style="text-align: left;"><h2>Cola</h2></td>
-                    <td style="text-align: right;">$3.00</td>
-                </tr>
                 <br>
-                <tr>
-                    <td style="text-align: left;"><h2>Tea</h2></td>
-                    <td style="text-align: right;">$3.25</td>
-                </tr>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Beverages</h2>
+                    </div>
+                </div>
                 <br>
-                <tr>
-                    <td style="text-align: left;"><h2>Sake (hot or cold)</h2></td>
-                    <td style="text-align: right;">$10.50</td>
-                </tr>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Cola</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <br>$3.00<br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Tea</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <br>$3.25<br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Sake (hot or cold)</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <br>$10.50<br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Rice Wine</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <br>$8.25<br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Water</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <br>Gratuit<br><br>
+                    </div>
+                </div>
                 <br>
-                <tr>
-                    <td style="text-align: left;"><h2>Rice Wine</h2></td>
-                    <td style="text-align: right;">$8.25</td>
-                </tr>
                 <br>
-                <tr>
-                    <td style="text-align: left;"><h2>Water</h2></td>
-                    <td style="text-align: right;">Gratuit</td>
-            </table>
-            <br>
-            <br>
-            <br>
-            <br>
+            </div>
         </div>
     </body>
     <footer>

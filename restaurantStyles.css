@@ -11,7 +11,7 @@ html {
 body {
     background-color: transparent;
 }
-.certainBodies {
+#certainBodies {
     background-color: lightsteelblue;
 }
 a:hover, active {
