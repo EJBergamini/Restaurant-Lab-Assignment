@@ -6,6 +6,7 @@ renamed already.-->
 <!--I need help aligning the labels to the left of the fields, no matter what I do they won't align.-->
 <!--Added bold to the contact field labels.-->
 <!--Added the tab links, problem is I still can't figure out using bootstrap how to make one centered column of forms with labels on the left.-->
+<!--Using bootstrap grid specifically for forms I was able to get a layout where the form somewhat centers and the labels are inline to the left.-->
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="restaurantStyles.css">
@@ -27,7 +28,7 @@ renamed already.-->
             .forms input {
                 display: flex;
                 margin: auto;
-                text-align: center;
+                text-align: left;
             }
             #ctr {
                 text-align: flex;
@@ -56,15 +57,15 @@ renamed already.-->
                 text-align: center;
                 width: 200px;
             }
-            .mainlabel {
+            #mainlabel {
                 /*display: flex;*/
                 /*float: left;*/
-                /*display: inline-block;*/
+                /*display: inline-block;
                 clear: left;
-                width: 240px;
-                text-align: right;
-                border: 5px solid;
-                /*padding-left: 500px;*/
+                width: 200px;*/
+                text-align: end;
+                /*border: 5px solid;
+                padding-left: 500px;*/
                 font-weight: bold;
             }
         </style>
@@ -86,65 +87,69 @@ renamed already.-->
         <br>
         <br>
             <form name="inputs" action="#" method="post">
-                <div class="forms">
-                    <label class="mainlabel" for="customerName">Customer Name:&emsp;</label>
-                    <input id="ctr" type="text" name="customerName"/>
-                </div>
-                <br>
-                <div class="forms">
-                    <label class="mainlabel" for="cusutomerEmail">Customer Email:&emsp;</label>
-                    <input id="ctr" type="text" name="customerEmail"/>
-                </div>
-                <br>
-                <div class="forms">
-                    <label class="mainlabel" for="cusutomerPhoneNumber">Customer Phone Number:&emsp;</label>
-                    <input id="ctr" type="tel" name="customerPhoneNumber"/>
-                </div>
-                <br>
-                <div class="forms">
-                    <label class="mainlabel" for="reason">Select the Reason for Reaching-Out:&emsp;</label>
-                    <select id="ctr" style="width: 200px;" name="reason">
-                    <option value="catering">Catering</option>
-                    <option value="private_party">Private Party</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="other">Other</option>
-                    </select>
-                </div>
-                <br>
-                <div class="forms">
-                    <label class="mainlabel" for="additionalInformation">Additional Information:&emsp;</label>
-                    <textarea id="ctr" style="height: 100px; width: 200px;" name="additionalInformation"/></textarea>
-                </div>
-                <br>
-                <div class="forms">
-                    <p class="mainlabel">Have You Visited Us Before?:&emsp;</p>
-                    <div class="radiobuttons">
-                        <input id="rad" type="radio" name="hasVisited1" value="No" checked />
-                        <label class="radiolabel;" for="hasVisited1">No</label>
-                        <input id="rad" type="radio" name="hasVisited2" value="Yes" />
-                        <label class="radiolabel;" for="hasVisited2">Yes</label>
+                <fieldset>
+                    <legend style="text-align: center;">Contact Us<br><br></legend>
+                    <div class="form-group row" class="forms">
+                        <label class="col-sm-6" id="mainlabel" for="customerName" >Customer Name:&emsp;</label>
+                        <input class-"col-sm-6" id="ctr" type="text" name="customerName" placeholder="   Your Name"/>
                     </div>
-                </div>
-                <br>
-                <div class="forms">
-                    <p class="mainlabel">Best Days to Contact You:&emsp;</p>
-                    <div class="checkboxes">
-                        <input id="chk" style="width: 20px;" type="checkbox" name="monday" value="Monday">
-                        <label class="checklabel;" for="monday">M</label>
-                        <input id="chk" style="width: 20px;" type="checkbox" name="tuesday" value="Tuesday">
-                        <label class="checklabel;" for="tuesday">Tu</label>
-                        <input id="chk" style="width: 20px;" type="checkbox" name="wednesday" value="Wednesday">
-                        <label class="checklabel;" for="wednesday">W</label>
-                        <input id="chk" style="width: 20px;" type="checkbox" name="thursday" value="Thursday">
-                        <label class="checklabel;" for="thursday">Th</label>
-                        <input id="chk" style="width: 20px;" type="checkbox" name="friday" value="Friday">
-                        <label class="checklabel;" for="friday">F</label>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <label class="col-sm-6" id="mainlabel" for="cusutomerEmail">Customer Email:&emsp;</label>
+                        <input class="col-sm-6" id="ctr" type="text" name="customerEmail" placeholder="Your Email@email.com"/>
                     </div>
-                </div>
-                <br>
-                <div class="forms">
-                    <input style="width: auto;" type="submit"/>
-                </div>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <label class="col-sm-6" id="mainlabel" for="cusutomerPhoneNumber">Customer Phone Number:&emsp;</label>
+                        <input class="col-sm-6" id="ctr" type="tel" name="customerPhoneNumber" placeholder="Your Phone Number"/>
+                    </div>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <label class="col-sm-6" id="mainlabel" for="reason">Select the Reason for Reaching-Out:&emsp;</label>
+                        <select class="col-sm-6" id="ctr" style="width: 200px;" name="reason">
+                        <option value="catering">Catering</option>
+                        <option value="private_party">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <label class="col-sm-6" id="mainlabel" for="additionalInformation">Additional Information:&emsp;</label>
+                        <textarea class="col-sm-6" id="ctr" style="height: 100px; width: 200px;" name="additionalInformation" placeholder="Describe how we can help you..."/></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <p class="col-sm-6" id="mainlabel" style="font-weight: bold;">Have You Visited Us Before?:&emsp;</p>
+                        <div class="col-sm-6" class="radiobuttons">
+                            <input id="rad" type="radio" name="hasVisited1" value="No" checked />
+                            <label class="radiolabel;" for="hasVisited1">No&emsp;</label>
+                            <input id="rad" type="radio" name="hasVisited2" value="Yes" />
+                            <label class="radiolabel;" for="hasVisited2">Yes</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <p class="col-sm-6" id="mainlabel" style="font-weight: bold;">Best Days to Contact You:&emsp;</p>
+                        <div class="col-sm-6" class="checkboxes">
+                            <input id="chk" style="width: 20px;" type="checkbox" name="monday" value="Monday">
+                            <label class="checklabel;" for="monday">M</label>
+                            <input id="chk" style="width: 20px;" type="checkbox" name="tuesday" value="Tuesday">
+                            <label class="checklabel;" for="tuesday">Tu</label>
+                            <input id="chk" style="width: 20px;" type="checkbox" name="wednesday" value="Wednesday">
+                            <label class="checklabel;" for="wednesday">W</label>
+                            <input id="chk" style="width: 20px;" type="checkbox" name="thursday" value="Thursday">
+                            <label class="checklabel;" for="thursday">Th</label>
+                            <input id="chk" style="width: 20px;" type="checkbox" name="friday" value="Friday">
+                            <label class="checklabel;" for="friday">F</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group row" class="forms">
+                        <p class="col-sm-6"></p>
+                        <input class="col-sm-6" style="width: auto;" type="submit"/>
+                    </div>
+                </fieldset>
             </form>
         <br>
         <br>
